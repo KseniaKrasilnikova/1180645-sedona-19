@@ -7,7 +7,7 @@
 <body>
 <header class="page-header">
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <button class="main-nav__toggle burger" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
       <!-- обёртка для списков в меню. Это поможет спозиционировать элементы в будущем.  -->
       <ul class="main-nav__list site-list">
@@ -37,7 +37,6 @@
     <img class="welcome__welcome-text" src="#.svg" width="#" height="#" alt="Добро пожаловать в Седону">
     <svg><!-- white mask--></svg>
   </section>
-
   <section class="photo">
     <header class="photo__header">
       <h2 class="visually-hidden">Фото и видео Седоны</h2>
@@ -48,7 +47,7 @@
 
     <div class="photo__wrapper>">
       <ul class="photo__list">
-        <li class="photo__item">
+        <li class="photo__item preview"> <!-- .photo__item управляет шириной, .preview для начинки-->
           <img src="#" width="#" height="#" alt="Фото просторов Седоны">
           <b class="photo__title">Неродные просторы</b>
           <p class="photo__author">Автор фото: Борис</p>
@@ -57,7 +56,7 @@
             1350
           </button>
         </li>
-        <li class="photo__item">
+        <li class="photo__item preview">
           <img src="#" width="#" height="#" alt="Фото растительности Седоны">
           <b class="photo__title">Местная растительность</b>
           <p class="photo__author">Автор фото: Сергей</p>
@@ -66,7 +65,7 @@
             143
           </button>
         </li>
-        <li class="photo__item">
+        <li class="photo__item preview">
           <img src="#" width="#" height="#" alt="Фото дороги на север от Седоны">
           <b class="photo__title">Дорога на север</b>
           <p class="photo__author">Автор фото: Петр</p>
@@ -75,7 +74,7 @@
             96
           </button>
         </li>
-        <li class="photo__item">
+        <li class="photo__item preview">
           <img src="#" width="#" height="#" alt="Фото Моста дьявола">
           <b class="photo__title">Мост дьявола</b>
           <p class="photo__author">Автор фото: Антон</p>
@@ -86,9 +85,18 @@
         </li>
       </ul>
     </div>
+    <section class="video">
+      <header class="video__header">
+        <b class="video__slogan">Все еще сомневаетесь?</b>
+        <p class="video__intro">Смотрите ведеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+          раз!</p>
+      </header>
+      <div class="video__wrapper>">
+        <!-- видеоплеер -->
+      </div>
+    </section>
   </section>
 </main>
-
 <footer class="page-footer">
   <p class="page-footer__contacts">#VISITSEDONA</p>
   <div class="page-footer__social social"> <!-- позиционирование .page-footer__social , стили .social -->

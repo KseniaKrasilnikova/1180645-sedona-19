@@ -7,7 +7,7 @@
 <body>
 <header class="page-header">
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <button class="main-nav__toggle burger" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
       <!-- обёртка для списков в меню. Это поможет спозиционировать элементы в будущем.  -->
       <ul class="main-nav__list site-list">
@@ -48,7 +48,7 @@
 
     <div class="advantages__with-photo-wrapper">
       <svg><!-- white mask--></svg>
-      <div class="advantages__item on-blue">
+      <div class="advantages__item--on-blue">
         <h3 class="advantages__title">Настоящий городок</h3>
         <p class="advantages__number">&mdash; №1 &mdash;</p>
         <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -57,7 +57,7 @@
     </div>
 
     <section class="features">
-      <div class="features-wrapper">
+      <div class="features__wrapper">
         <ul class="features__list">
           <li class="features__item">
             <svg></svg>
@@ -79,7 +79,7 @@
     </section>
 
     <div class="advantages__with-photo-wrapper">
-      <div class="advantages__item on-blue">
+      <div class="advantages__item--on-blue">
         <h3 class="advantages__title">Там есть Мост дьявола</h3>
         <p class="advantages__number">&mdash; №2 &mdash;</p>
         <p class="advantages__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -88,26 +88,42 @@
     </div>
 
     <div class="advantages__wrapper">
-      <div class="advantages__item on-grey">
+      <div class="advantages__item--on-grey">
         <h3 class="advantages__title">Небольшая площадь</h3>
         <p class="advantages__number">&mdash; №3 &mdash;</p>
         <p class="advantages__description">Все достопримечательности находятся очень близко</p>
       </div>
-      <div class="advantages__item on-grey">
+      <div class="advantages__item--on-grey">
         <h3 class="advantages__title">Красивая дорога</h3>
         <p class="advantages__number">&mdash; №4 &mdash;</p>
         <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </div>
-      <div class="advantages__item on-grey">
+      <div class="advantages__item--on-grey">
         <h3 class="advantages__title">Мало туристов</h3>
         <p class="advantages__number">&mdash; №5 &mdash;</p>
         <p class="advantages__description">Большинство едет в Гранд каньон и толпится там</p>
       </div>
     </div>
   </section>
+
+  <section class="booking">
+    <div class="booking__wrapper">
+      <h2 class="visually-hidden">Бронирование гостиницы в Седоне</h2>
+      <b class="booking__slogan">Заинтересовались?</b>
+      <p class="booking__intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        Седоне</p>
+      <button class="booking__button button" type="button">Найти гостиницу</button>
+    </div>
+  </section>
+  <section class="map">
+    <div class="map__wrapper">
+      <img class="map__picture" src="#.png" width="#" height="#" alt="Седона на карте">
+      <iframe class="map__field"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d44047.38962387951!2d-111.81077328792595!3d34.86020167213232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1584270979628!5m2!1sru!2sru"
+              height="593" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </section>
 </main>
-
-
 <footer class="page-footer">
   <p class="page-footer__contacts">#VISITSEDONA</p>
   <div class="page-footer__social social"> <!-- позиционирование .page-footer__social , стили .social -->
