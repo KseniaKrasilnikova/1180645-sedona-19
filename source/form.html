@@ -2,6 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/normalize.scss" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>Седона - туристический город</title>
 </head>
 <body>
@@ -10,7 +14,7 @@
     <button class="main-nav__toggle burger" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
       <!-- обёртка для списков в меню. Это поможет спозиционировать элементы в будущем.  -->
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list">
         <li class="site-list__item">
           <a href="index.html">Главная</a>
         </li>
@@ -50,24 +54,34 @@
         <div class="review__form__wrapper">
           <h3 class="review__form__header header-text">Представьтесь:</h3>
           <!-- .header-text стиль заголовков ЖИРНЫМИ буквами по всему сайту-->
-          <label class="review__form__name form-text" for="name">Имя*:</label>
-          <!-- .form-text стиль подписей ЗАГЛАВНЫМИ буквами в label
-               .input-text стиль текста внетри поля ввода Жирный -->
-          <input class="review__form__name input-text" id="name" type="text" name="name" value="Петр">
-          <label class="review__form__surname form-text" for="surname">Фамилия*:</label>
-          <input class="review__form__name input-text" id="surname" type="text" name="surname" value="Иванов">
-          <label class="review__form__father-name form-text" for="father-name">Отчество:</label>
-          <input class="review__form__name input-text" id="father-name" type="text" name="father-name"
-                 value="Александрович">
+          <label class="review__form__field form-text">
+            <span>Имя*:</span>
+            <input class="review__form__input" type="text" value="Петр">
+          </label>
+          <!-- .form-text стиль подписей ЗАГЛАВНЫМИ буквами в label,
+          .review__form__field - отступы
+              -->
+          <label class="review__form__field form-text">
+            <span>Фамилия*:</span>
+            <input class="review__form__input" type="text" value="Иванов">
+          </label>
+          <label class="review__form__field form-text">
+            <span>Отчество:</span>
+            <input class="review__form__input" type="text" value="Александрович">
+          </label>
         </div>
         <div class="review__form__wrapper">
           <h3 class="review__form__header header-text">Контактная информация:</h3>
-          <label class="review__form__phone form-text" for="phone">Контактный телефон*:</label>
-          <input class="review__form__contacts input-text" id="phone" type="text" name="phone" value="Введите телефон">
-          <!-- svg с трубкой -->
-          <label class="review__form__mail form-text" for="mail">Электронная почта*:</label>
-          <input class="review__form__contacts input-text" id="mail" type="text" name="mail" value="Введите e-mail">
-          <!-- svg с конвертом -->
+          <label class="review__form__field form-text">
+            <span>Контактный телефон*:</span>
+            <input class="review__form__input" type="text" value="Введите телефон">
+            <!-- svg с трубкой -->
+          </label>
+          <label class="review__form__field form-text">
+            <span>Электронная почта*:</span>
+            <input class="review__form__input" type="text" value="Введите e-mail">
+            <!-- svg с конвертом -->
+          </label>
         </div>
         <div class="review__form__wrapper">
           <h3 class="review__form__header header-text">Ваше общее впечатление:</h3>
