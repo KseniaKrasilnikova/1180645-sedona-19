@@ -1,0 +1,53 @@
+@import "../mixins";
+
+.advantages__slogan,
+.advantages__intro {
+  margin: 0;
+}
+
+.advantages-header-text {
+  .header-font;
+  text-align: center;
+  color: #000000;
+}
+
+.advantages-normal-text {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.advantages__item {
+  h3, p {
+    margin: 0;
+  }
+}
+
+.advantages__item--on-blue {
+  background-color: @blue;
+  color: #ffffff;
+  text-align: center;
+}
+
+.advantages__item--on-grey {
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.advantages-header-text-white {
+  .header-font;
+}
+
+.advantages-normal-text-white {
+  .normal-font;
+}
+
+.advantages__with-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__photo {
+  background-color: @blue;
+}
