@@ -18,10 +18,8 @@
   text-align: center;
 }
 
-.advantages__item {
-  h3, p {
+.advantages__item h3 {
     margin: 0;
-  }
 }
 
 .advantages__item--on-blue {
@@ -35,12 +33,14 @@
   text-align: center;
 }
 
-.advantages-header-text-white {
+.advantages-header-text--white {
   .header-font;
+  color: #ffffff;
 }
 
-.advantages-normal-text-white {
+.advantages-normal-text--white {
   .normal-font;
+  color: #ffffff;
 }
 
 .advantages__with-photo-wrapper {
@@ -51,3 +51,12 @@
 .advantages__photo {
   background-color: @blue;
 }
+
+.advantages__item--mask::before {
+  content: "";
+  background: url("../../img/bg-triangle.svg") no-repeat;
+  background-size: cover;
+  display: block;
+  height: 37px;
+}
+
