@@ -46,116 +46,117 @@
   <section class="review">
     <header class="review__header">
       <h2 class="visually-hidden">Отзывы о посещении Седоны</h2>
-      <p class="review__slogan review-text-header">Оставьте свой отзыв</p>
-      <p class="review__intro review-text-title">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+      <p class="review__slogan">Оставьте свой отзыв</p>
+      <p class="review__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
     </header>
+
     <div class="review__wrapper>">
-      <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="review__form__wrapper">
-          <h3 class="review__form__header review-text-header">Представьтесь:</h3>
-          <label class="review__form__field review-text-label">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__wrapper">
+          <h3 class="form__header">Представьтесь:</h3>
+          <label class="form__field form-text">
             <span>Имя*:</span>
-            <input class="review__form__input review-text-input" type="text" placeholder="Петр">
+            <input class="form__input form-text--input" type="text" placeholder="Петр">
           </label>
-          <label class="review__form__field review-text-label">
+          <label class="form__field form-text">
             <span>Фамилия*:</span>
-           <input class="review__form__input review-text-input" type="text" placeholder="Иванов">
+            <input class="form__input form-text--input" type="text" placeholder="Иванов">
           </label>
-          <label class="review__form__field review-text-label">
+          <label class="form__field form-text">
             <span>Отчество:</span>
-            <input class="review__form__input review-text-input" type="text" placeholder="Александрович">
+            <input class="form__input form-text--input" type="text" placeholder="Александрович">
           </label>
         </div>
-        <div class="review__form__wrapper">
-          <h3 class="review__form__header review-text-header">Контактная информация:</h3>
-          <label class="review__form__field form-text review-text-label">
+
+        <div class="form__wrapper">
+          <h3 class="form__header">Контактная информация:</h3>
+          <label class="form__field form-text">
             <span>Контактный телефон*:</span>
-            <input class="review__form__input review-text-input" type="text" placeholder="Введите телефон">
+            <input class="orm__input form-text--input" type="text" placeholder="Введите телефон">
             <!-- svg с трубкой -->
           </label>
-          <label class="review__form__field review-text-label">
+          <label class="form__field form-text">
             <span>Электронная почта*:</span>
-            <input class="review__form__input review-text-input" type="text" placeholder="Введите e-mail">
+            <input class="form__input form-text--input" type="text" placeholder="Введите e-mail">
             <!-- svg с конвертом -->
           </label>
         </div>
-        <div class="review__form__wrapper">
-          <h3 class="review__form__header review-text-header">Ваше общее впечатление:</h3>
-          <div class="review__form__checkbox">
-            <ul class="review__form__checkbox__list">
-              <li class="review__form__checkbox__item">
-                <label class="review-text-input" for="good">
-                  <input class="review__form__checkbox__item__input review__form__checkbox__item__input--round"
+
+        <div class="form__wrapper">
+          <div class="checkbox">
+            <h3 class="checkbox__header checkbox-text">Ваше общее впечатление:</h3>
+            <ul class="checkbox__list">
+              <li class="checkbox__item">
+                <label class="checkbox__label" for="good">
+                  <input class="checkbox__item--round"
                          id="good" type="checkbox" name="good"
                          checked>
-                  <span class="review__form__checkbox__item__text input-text"></span>
-                  Скорее положительное
+                  <span class="checkbox-text--input">Скорее положительное</span>
                 </label>
               </li>
-              <li class="review__form__checkbox__item">
-                <label class="review-text-input" for="bad">
-                  <input class="review__form__checkbox__item__input review__form__checkbox__item__input--round" id="bad"
+              <li class="checkbox__item">
+                <label class="checkbox__label" for="bad">
+                  <input class="checkbox__item--round" id="bad"
                          type="checkbox" name="bad">
-                  <span class="review__form__checkbox__item__text input-text"></span>
-                  Скорее отрицательное
+                  <span class="checkbox-text--input">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="review__form__checkbox__item">
-                <label class="review-text-input" for="neither">
-                  <input class="review__form__checkbox__item__input review__form__checkbox__item__input--round"
+              <li class="checkbox__item">
+                <label class="checkbox__label" for="neither">
+                  <input class="checkbox__item--round"
                          id="neither" type="checkbox" name="neither">
-                  <span class="review__form__checkbox__item__text input-text"></span>
-                  Затрудняюсь ответить
+                  <span class="checkbox-text--input">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
           </div>
         </div>
-        <div class="review__form__wrapper">
-          <h3 class="review__form__header review-text-header">Посещенные достопримечательности:</h3>
-          <div class="review__form__checkbox">
-            <ul class="review__form__checkbox__list">
-              <li class="review__form__checkbox__item">
-                <label class="review-text-input" for="bridge"> <!--class="review__form__checkbox__label" -->
-                  <input class="review__form__checkbox__item__input review__form__checkbox__item__input--square"
+
+        <div class="form__wrapper">
+          <div class="checkbox">
+            <h3 class="checkbox__header checkbox-text">Посещенные достопримечательности:</h3>
+            <ul class="checkbox__list">
+              <li class="checkbox__item">
+                <label class="checkbox__label" for="bridge"> <!--class="review__form__checkbox__label" -->
+                  <input class="checkbox__item--square"
                          id="bridge" type="checkbox" name="bridge"
                          checked>
-                  <span class="review__form__checkbox__item__text input-text"></span>
-                  Мост Дьявола
+                  <span class="checkbox-text--input">Мост Дьявола</span>
                 </label>
               </li>
               <li class="review__form__checkbox__item">
-                <label class="review-text-input" for="bell">
-                  <input class="review__form__checkbox__item__input review__form__checkbox__item__input--square"
+                <label class="checkbox__label" for="bell">
+                  <input class="checkbox__item--square"
                          id="bell" type="checkbox" name="bell"
                          checked>
-                  <span class="review__form__checkbox__item__text input-text"></span>
-                  Гора-Колокол
+                  <span class="checkbox-text--input">Гора-Колокол</span>
                 </label>
               </li>
               <li class="review__form__checkbox__item">
-                <label class="review-text-input" for="park">
-                  <input class="review__form__checkbox__item__input review__form__checkbox__item__input--square"
+                <label class="checkbox__label" for="park">
+                  <input class="checkbox__item--square"
                          id="park" type="checkbox" name="park"
                          checked>
-                  <span class="review__form__checkbox__item__text input-text"></span>
-                  Слайд-парк
+                  <span class="checkbox-text--input">Слайд-парк</span>
                 </label>
               </li>
               <li class="review__form__checkbox__item">
-                <label class="review-text-input" for="rocks">
-                  <input class="review__form__checkbox__item__input review__form__checkbox__item__input--square"
+                <label class="checkbox__label" for="rocks">
+                  <input class="checkbox__item--square"
                          id="rocks" type="checkbox" name="rocks">
-                  <span class="review__form__checkbox__item__text input-text"></span>
-                  Красные скалы
+                  <span class="checkbox-text--input">Красные скалы</span>
                 </label>
               </li>
             </ul>
           </div>
-          <div class="review__form__wrapper">
-            <h3 class="review__form__header review-text-header">Опишите свои эмоции:</h3>
-            <textarea class="review-text-input" name="comment" rows="5">Опишите подробно все свои восторги</textarea>
+
+          <div class="form__wrapper">
+            <div class="comment">
+              <h3 class="comment__header comment-text">Опишите свои эмоции:</h3>
+              <textarea class="comment-area comment-text--input" name="comment"
+                        rows="5">Опишите подробно все свои восторги</textarea>
+            </div>
           </div>
           <button class="review__button button" type="submit">Отправить отзыв</button>
         </div>
