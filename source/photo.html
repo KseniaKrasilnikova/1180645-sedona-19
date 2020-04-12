@@ -50,10 +50,11 @@
     <div class="photo__wrapper>">
       <ul class="photo__list">
         <li class="photo__item preview"> <!-- .photo__item управляет шириной, .preview для начинки-->
-          <img class="photo__bg" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото просторов Седоны">
+          <img class="photo__bg" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
+               alt="Фото просторов Седоны">
           <p class="photo__title preview__title">Неродные просторы</p>
           <p class="photo__author preview__author">Автор фото: Борис</p>
-          <button class="photo__likes-button" type="button">
+          <button class="like" type="button">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
                  viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
@@ -69,10 +70,11 @@
           <span class="preview__title">1350</span>
         </li>
         <li class="photo__item preview">
-          <img class="photo__bg" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото растительности Седоны">
+          <img class="photo__bg" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280"
+               alt="Фото растительности Седоны">
           <p class="photo__title preview__title">Местная растительность</p>
           <p class="photo__author preview__author">Автор фото: Сергей</p>
-          <button class="photo__likes-button" type="button">
+          <button class="like" type="button">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
                  viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
@@ -88,10 +90,11 @@
           <span class="preview__title">143</span>
         </li>
         <li class="photo__item preview">
-          <img class="photo__bg" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото дороги на север от Седоны">
+          <img class="photo__bg" src="img/photo-roads-mobile@1x.jpg" width="280" height="280"
+               alt="Фото дороги на север от Седоны">
           <p class="photo__title preview__title">Дорога на север</p>
           <p class="photo__author preview__author">Автор фото: Петр</p>
-          <button class="photo__likes-button" type="button">
+          <button class="like" type="button">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
                  viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
@@ -110,7 +113,7 @@
           <img class="photo__bg" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото Моста дьявола">
           <p class="photo__title preview__title">Мост дьявола</p>
           <p class="photo__author preview__author">Автор фото: Антон</p>
-          <button class="photo__likes-button" type="button">
+          <button class="like" type="button">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
                  viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
@@ -128,11 +131,13 @@
       </ul>
     </div>
     <section class="video">
-      <header class="video__header">
-        <p class="video__slogan photo__text">Все еще сомневаетесь?</p>
-        <p class="video__intro photo__intro">Смотрите ведеопрезентацию и скорее за билетами, пока они не подорожали
-          в очередной
-          раз!</p>
+      <div class="video-wrapper video-text">
+        <header class="video__header">
+          <p class="video__slogan">Все еще сомневаетесь?</p>
+          <p class="video__intro video-text__intro">Смотрите ведеопрезентацию и скорее за билетами, пока они не подорожали
+            в очередной
+            раз!</p>
+      </div>
       </header>
       <div class="video__wrapper>">
         <!-- видеоплеер -->
