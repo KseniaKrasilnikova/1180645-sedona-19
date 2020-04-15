@@ -2,15 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
-  ul {
+.page-footer__list {
     list-style: none;
     margin: 0;
     padding: 0;
 
     display: flex;
     flex-wrap: wrap;
-  }
 }
 
 .page-footer__contacts {
@@ -22,4 +27,5 @@
 
 .page-footer__copyright {
   display: flex;
+  flex-wrap: nowrap;
  }

@@ -1,8 +1,19 @@
-.photo {
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.photo__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
   }
 }
 
@@ -10,4 +21,30 @@
   background-color: #dec9bf;
   height: 280px;
   display: block;
+}
+
+.photo__slogan {
+  margin: 0;
+  padding-top: 38px;
+}
+
+.photo__intro {
+  margin: 0;
+  padding: 27px 4px 49px 4px;
+}
+
+/* надо ли ширину здесь? */
+.photo__item {
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    &:first-child {
+      width: 648px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    &:first-child {
+      width: 1200px;
+    }
+  }
 }
