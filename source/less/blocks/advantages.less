@@ -40,11 +40,9 @@
   .header-font;
   color: #000000;
   text-align: center;
-}
-
-.advantages__with-photo-wrapper {
-  display: flex;
-  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    width: 256px;
+  }
 }
 
 .advantages__photo {
@@ -75,7 +73,26 @@
   flex-direction: column;
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 }
+
+.advantages__with-photo-wrapper-reverse {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 
