@@ -1,0 +1,49 @@
+.scale {
+  height: 45px;
+  width: 280px;
+  background: rgba(59, 36, 21, 0.6);
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 93px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}
+
+.scale__bar {
+  width: 235px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  position: relative;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (min-width: @tablet-width) {
+    width: 389px;
+    bottom: -44px;
+    left: 45%;
+  }
+  @media (min-width: @desktop-width) {
+    width: 540px;
+  }
+}
+
+.scale__toggle {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  position: relative;
+  bottom: -13px;
+  left: 20%;
+  @media (min-width: @tablet-width) {
+    bottom: -37px;
+    left: 32%;
+  }
+/*  @media (min-width: @desktop-width) {
+
+  }*/
+}

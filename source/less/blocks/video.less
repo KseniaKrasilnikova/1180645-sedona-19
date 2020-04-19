@@ -1,11 +1,10 @@
-.video {
+.video__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
 }
 
-.video__player {
+.video__screen {
+  height: 201px;
   @media (min-width: @tablet-width) {
     width: 648px;
     height: 499px;
@@ -15,5 +14,25 @@
     width: 800px;
     height: 500px;
     margin: 0 auto;
+  }
+}
+
+.video__scale {
+  position: relative;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (min-width: @tablet-width) {
+    bottom: 94px;
+  }
+}
+
+.video__panel {
+  position: relative;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (min-width: @tablet-width) {
+    bottom: 177px;
   }
 }
