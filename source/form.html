@@ -10,6 +10,7 @@
 <header class="page-header">
   <nav class="main-nav">
     <button class="main-nav__toggle burger" type="button"></button>
+    <button class="main-nav__cross cross" type="button"></button>
     <div class="main-nav__wrapper">
       <!-- обёртка для списков в меню. Это поможет спозиционировать элементы в будущем.  -->
       <ul class="main-nav__list">
@@ -39,7 +40,7 @@
          alt="Добро пожаловать в Седону">
   </section>
 
-  <section class="review">
+  <section class="review container">
     <header class="review__header">
       <h2 class="visually-hidden">Отзывы о посещении Седоны</h2>
       <p class="review__slogan">Оставьте свой отзыв</p>
@@ -147,7 +148,6 @@
               </li>
             </ul>
           </div>
-
           <div class="form__wrapper">
             <div class="comment comment-text">
               <h3 class="comment__header">Опишите свои эмоции:</h3>
@@ -157,6 +157,7 @@
           </div>
           <button class="review__button button" type="submit">Отправить отзыв</button>
         </div>
+        <span class="form__comment">* — обязательные поля</span>
       </form>
     </div>
   </section>
