@@ -18,10 +18,29 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    background: white;
-    float: left;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 0 20px 0 50px;
+    background-color: #ffffff;
   }
+  @media (min-width: @desktop-width) {
+    padding: 0 72px;
+  }
+}
+
+/*
+выравнивание текста в меню влево и вправо
+*/
+.main-nav__list li:nth-child(4n+1),
+.main-nav__list li:nth-child(4n+2) {
+  text-align: left;
+}
+
+.main-nav__list li:nth-child(4n+3),
+.main-nav__list li:nth-child(4n+4) {
+  text-align: right;
 }
 
 /*
@@ -59,8 +78,6 @@
   top: 15px;
 }
 
-/*****/
-
 /*
 no-JS
 */
@@ -87,5 +104,3 @@ no-JS
   padding: 7px;
   text-align: center;
 }
-
-/*****/
