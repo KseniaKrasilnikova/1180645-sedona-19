@@ -16,7 +16,8 @@
   <polygon
     points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
 </svg>
-      <svg class="menu-toggle burger" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      <svg class="menu-toggle burger" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
            x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982"
            enable-background="new 0 0 22.928 21.982" xml:space="preserve">
   <g fill="#81b3d2"><rect width="22.928" height="3.964"/>
@@ -53,7 +54,7 @@
   <h1 class="visually-hidden">Фото и видео Седоны</h1>
   <section class="welcome">
     <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-    <img class="welcome__welcome-text" src="img/text-sedona.svg" width="229" height="39"
+    <img class="welcome__welcome-text" src="../img/text-sedona.svg" width="229" height="39"
          alt="Добро пожаловать в Седону">
   </section>
   <section class="photo">
@@ -68,14 +69,18 @@
       <div class="photo__wrapper">
         <ul class="photo__list">
           <li class="photo__item preview"> <!-- .photo__item управляет шириной, .preview для начинки-->
-            <img class="photo__bg" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
+            <img class="photo__bg" src="../img/photo-sunset-mobile@1x.jpg" width="280" height="280"
                  alt="Фото просторов Седоны">
-            <p class="photo__title preview__title">Неродные просторы</p>
-            <p class="photo__author preview__author">Автор фото: Борис</p>
-            <button class="like" type="button">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
-                   viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
+            <div class="photo__info">
+              <div class="photo__description">
+                <p class="photo__title preview__title">Неродные просторы</p>
+                <p class="photo__author preview__author">Автор фото: Борис</p>
+              </div>
+              <div class="photo__like">
+                <button class="like" type="button">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
+                       viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
               <g id="Page-1">
                 <g id="Core" transform="translate(-295.000000, -464.000000)"><g id="thumb-up" transform="translate(295.000000, 464.000000)">
                     <path id="Shape" fill="#b2b2b2"
@@ -84,18 +89,24 @@
                 </g>
               </g>
             </svg>
-            </button>
-            <span class="preview__title">1350</span>
+                </button>
+                <span class="preview__title">1350</span>
+              </div>
+            </div>
           </li>
           <li class="photo__item preview">
-            <img class="photo__bg" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280"
+            <img class="photo__bg" src="../img/photo-cactus-mobile@1x.jpg" width="280" height="280"
                  alt="Фото растительности Седоны">
-            <p class="photo__title preview__title">Местная растительность</p>
-            <p class="photo__author preview__author">Автор фото: Сергей</p>
-            <button class="like" type="button">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
-                   viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
+            <div class="photo__info">
+              <div class="photo__description">
+                <p class="photo__title preview__title">Местная растительность</p>
+                <p class="photo__author preview__author">Автор фото: Сергей</p>
+              </div>
+              <div class="photo__like">
+                <button class="like" type="button">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
+                       viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
               <g id="Page-1">
                 <g id="Core" transform="translate(-295.000000, -464.000000)"><g id="thumb-up" transform="translate(295.000000, 464.000000)">
                     <path id="Shape" fill="#b2b2b2"
@@ -104,18 +115,24 @@
                 </g>
               </g>
             </svg>
-            </button>
-            <span class="preview__title">143</span>
+                </button>
+                <span class="preview__title">143</span>
+              </div>
+            </div>
           </li>
           <li class="photo__item preview">
-            <img class="photo__bg" src="img/photo-roads-mobile@1x.jpg" width="280" height="280"
+            <img class="photo__bg" src="../img/photo-roads-mobile@1x.jpg" width="280" height="280"
                  alt="Фото дороги на север от Седоны">
-            <p class="photo__title preview__title">Дорога на север</p>
-            <p class="photo__author preview__author">Автор фото: Петр</p>
-            <button class="like" type="button">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
-                   viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
+            <div class="photo__info">
+              <div class="photo__description">
+                <p class="photo__title preview__title">Дорога на север</p>
+                <p class="photo__author preview__author">Автор фото: Петр</p>
+              </div>
+              <div class="photo__like">
+                <button class="like" type="button">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
+                       viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
               <g id="Page-1">
                 <g id="Core" transform="translate(-295.000000, -464.000000)"><g id="thumb-up" transform="translate(295.000000, 464.000000)">
                     <path id="Shape" fill="#b2b2b2"
@@ -124,18 +141,24 @@
                 </g>
               </g>
             </svg>
-            </button>
-            <span class="preview__title">96</span>
+                </button>
+                <span class="preview__title">96</span>
+              </div>
+            </div>
           </li>
           <li class="photo__item preview">
-            <img class="photo__bg" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280"
+            <img class="photo__bg" src="../img/photo-bridge-mobile@1x.jpg" width="280" height="280"
                  alt="Фото Моста дьявола">
-            <p class="photo__title preview__title">Мост дьявола</p>
-            <p class="photo__author preview__author">Автор фото: Антон</p>
-            <button class="like" type="button">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
-                   viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
+            <div class="photo__info">
+              <div class="photo__description">
+                <p class="photo__title preview__title">Мост дьявола</p>
+                <p class="photo__author preview__author">Автор фото: Антон</p>
+              </div>
+              <div class="photo__like">
+                <button class="like" type="button">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px"
+                       viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
               <g id="Page-1">
                 <g id="Core" transform="translate(-295.000000, -464.000000)"><g id="thumb-up" transform="translate(295.000000, 464.000000)">
                     <path id="Shape" fill="#b2b2b2"
@@ -144,8 +167,10 @@
                 </g>
               </g>
             </svg>
-            </button>
-            <span class="preview__title">254</span>
+                </button>
+                <span class="preview__title">254</span>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

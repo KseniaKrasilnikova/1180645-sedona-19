@@ -1,7 +1,6 @@
 .photo__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .photo__list {
@@ -11,7 +10,6 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media (min-width: @tablet-width) {
  /*   width: 648px;*/
@@ -26,8 +24,9 @@
 
 .photo__bg {
   background-color: #dec9bf;
-  height: 280px;
   display: block;
+  width: 87.5%;
+  align-self: center;
 }
 
 .photo__slogan {
@@ -37,11 +36,15 @@
 
 .photo__intro {
   margin: 0;
-  padding: 27px 4px 49px 4px;
+  padding: 25px 23px 27px 27px;
 }
 
 /* надо ли ширину здесь? */
 .photo__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   @media (min-width: @tablet-width) {
     width: 324px;
     &:first-child {
@@ -54,4 +57,27 @@
       width: 1200px;
     }
   }
+}
+
+.photo__info {
+  display: flex;
+  flex-direction: column;
+  width: 87.5%;
+  padding: 0 6.25%;
+}
+
+.photo__title {
+  margin: 0;
+  padding-top: 15px;
+}
+
+.photo__author {
+  margin: 0;
+}
+
+.photo__like {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding-top: 6px;
 }
