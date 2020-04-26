@@ -1,6 +1,10 @@
 .preview {
   border-top: #e5e5e5 1px solid;
   padding: 23px 0 15px 0;
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    padding: 0;
+  }
 }
 .preview__title {
   font-size: 14px;
