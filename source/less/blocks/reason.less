@@ -3,6 +3,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .reason__head-text {
@@ -12,6 +15,11 @@
   margin: 0;
   padding-left: 10px;
   padding-top: 8px;
+  @media (min-width: @tablet-width) {
+  font-size: 21px;
+    padding-left: 0;
+    padding-top: 27px;
+  }
 }
 
 .reason__description {
@@ -19,15 +27,26 @@
   text-align: left;
   margin: 0;
   padding: 11px 0 0 50px;
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    padding: 21px 0 0 0;
+  }
 }
 
 .reason {
   svg {
     width: 40px;
     height: 40px;
+    @media (min-width: @tablet-width) {
+      width: 75px;
+      height: 72px;
+    }
   }
   display: flex;
   flex-direction: column;
   padding-top: 21px;
+  @media (min-width: @tablet-width) {
+    padding-top: 60px;
+  }
 }
 
