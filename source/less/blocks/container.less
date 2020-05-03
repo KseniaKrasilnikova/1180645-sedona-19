@@ -14,9 +14,11 @@
 }
 
 .container-desktop {
+  @media (min-width: @tablet-width) {
+    margin: 0 50px;
+    min-height: 89px;
+  }
   @media (min-width: @desktop-width) {
-    width: 1018px;
-    margin: 0 auto;
-    min-height: 92px;
+    margin: 0 92px;
   }
 }
