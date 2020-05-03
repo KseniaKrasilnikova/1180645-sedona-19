@@ -1,18 +1,22 @@
 .container {
   width: 280px;
   padding: 0 20px;
-}
 
-@media (min-width: @tablet-width) {
-  .container {
+  @media (min-width: @tablet-width) {
     width: 648px;
     padding: 0 60px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .container {
+  @media (min-width: @desktop-width) {
     width: 960px;
     padding: 0 120px;
+  }
+}
+
+.container-desktop {
+  @media (min-width: @desktop-width) {
+    width: 1018px;
+    margin: 0 auto;
+    min-height: 92px;
   }
 }
