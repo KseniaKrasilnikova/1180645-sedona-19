@@ -1,12 +1,26 @@
-.advantages__slogan,
 .advantages__intro {
   margin: 0;
+  padding: 28px 24px 3px 24px;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 49px;
+  }
+}
+
+.advantages__slogan {
+  margin: 0;
+  padding: 42px 26px 0 26px;
+  @media (min-width: @tablet-width) {
+    padding: 52px 80px 0 80px;
+  }
 }
 
 .advantages__header-text {
   .header-font;
   text-align: center;
   color: #000000;
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantages__normal-text {
@@ -16,15 +30,8 @@
   text-align: center;
 }
 
-.advantages__item h3 {
-  margin: 0;
-}
-
 .advantages__item--on-blue {
   background-color: @blue;
-  .header-font;
-  color: #ffffff;
-  text-align: center;
   @media (min-width: @tablet-width) {
     width: 256px;
     flex-grow: 1;
@@ -33,15 +40,44 @@
     width: 400px;
     flex-grow: 1;
   }
+
+  .advantages__title {
+    padding-top: 40px;
+    @media (min-width: @tablet-width) {
+      padding: 46px 53px 0 53px;
+    }
+    @media (min-width: @desktop-width) {
+      padding: 46px 125px 0 125px;
+    }
+  }
+
+  .advantages__description {
+    margin: 0;
+    padding: 4px 18px 41px 18px;
+    @media (min-width: @tablet-width) {
+      padding: 10px 44px 40px 44px;
+    }
+    @media (min-width: @desktop-width) {
+      padding: 10px 69px 40px 69px;
+    }
+  }
 }
 
 .advantages__item--on-grey {
-  background-color: #eeeeee;
-  .header-font;
-  color: #000000;
-  text-align: center;
+  border-bottom: #d6d6d6 solid 1px;
+  max-width: 87.5%;
+  align-self: center;
+  padding: 29px 17px;
+  box-sizing: border-box;
+
+  &:last-child {
+    border: none;
+  }
+
   @media (min-width: @tablet-width) {
-    width: 256px;
+    max-width: 33.33%;
+    border-bottom: none;
+    padding: 46px 55px;
   }
 }
 
@@ -53,7 +89,6 @@
   }
   @media (min-width: @desktop-width) {
     width: 800px;
-    height: 400px;
   }
 }
 
@@ -89,10 +124,28 @@
 .advantages__wrapper {
   display: flex;
   flex-direction: column;
+  background-color: #eeeeee;
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
+.advantages__number {
+  margin: 0;
+  padding: 7px 0 12px 0;
+  @media (min-width: @tablet-width) {
+    padding: 9px 0 12px 0;
+    .advantages__item--on-grey & {
+      padding: 9px 0 20px 0;
+    }
+  }
+}
 
+.advantages__description {
+  margin: 0;
+}
+
+.advantages__title {
+  margin: 0;
+}

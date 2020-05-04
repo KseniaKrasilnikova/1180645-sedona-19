@@ -1,9 +1,21 @@
+.preview {
+  border-top: #e5e5e5 1px solid;
+  padding: 23px 0 15px 0;
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    padding: 0;
+  }
+}
+
 .preview__title {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
   color: black;
   text-align: left;
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .preview__author {
@@ -12,4 +24,7 @@
   font-weight: normal;
   text-align: left;
   text-transform: none;
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }

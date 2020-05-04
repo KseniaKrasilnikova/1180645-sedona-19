@@ -1,57 +1,133 @@
 .photo__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.photo__header {
+  @media (min-width: @tablet-width) {
+    padding: 43px 0;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 73px 0;
+  }
 }
 
 .photo__list {
   list-style: none;
   margin: 0;
   padding: 0;
-
   display: flex;
   flex-direction: column;
-  align-items: center;
-
   @media (min-width: @tablet-width) {
- /*   width: 648px;*/
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    margin: 0 60px;
   }
   @media (min-width: @desktop-width) {
-/*    width: 1200px;*/
+    margin: 0;
   }
 }
 
 .photo__bg {
   background-color: #dec9bf;
-  height: 280px;
   display: block;
+  width: 87.5%;
+  align-self: center;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 267px; /* временно до замены картинки  */
+  }
+}
+
+.photo__bg-big {
+  width: 87.5%;
+  align-self: center;
+  background-color: #dec9bf;
+  @media (min-width: @tablet-width) {
+    height: 400px; /* временно до замены картинки  */
+    width: 100%;
+  }
 }
 
 .photo__slogan {
   margin: 0;
-  padding-top: 38px;
+  padding-top: 40px;
+  @media (min-width: @tablet-width) {
+    padding-top: 33px;
+  }
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
+  }
 }
 
 .photo__intro {
   margin: 0;
-  padding: 27px 4px 49px 4px;
+  padding: 25px 23px 27px 27px;
+  @media (min-width: @tablet-width) {
+    padding: 32px 163px 26px 160px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 29px 382px 0px 376px;
+  }
 }
 
 /* надо ли ширину здесь? */
 .photo__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   @media (min-width: @tablet-width) {
-    width: 324px;
+    width: 50%;
     &:first-child {
-      width: 648px;
+      width: 100%;
     }
   }
   @media (min-width: @desktop-width) {
     width: 400px;
     &:first-child {
-      width: 1200px;
+      width: 100%;
     }
+  }
+}
+
+.photo__info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 6.25%;
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 21px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: -79px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.photo__title {
+  margin: 0;
+}
+
+.photo__author {
+  margin: 0;
+}
+
+.photo__like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media (max-width: @mobile-width-only) {
+    padding-top: 9px;
+  }
+}
+
+.photo__description {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 15px;
   }
 }

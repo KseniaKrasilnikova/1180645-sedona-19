@@ -4,8 +4,7 @@
 }
 
 .video__screen {
-  height: 201px;
-  @media (min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
     width: 648px;
     height: 499px;
     margin: 0 auto;
@@ -17,13 +16,17 @@
   }
 }
 
+.video__screen-preview {
+  width: 100%;
+}
+
 .video-control {
-  margin-top: -45px;
+  margin-top: -52px;
   display: flex;
   flex-direction: column;
   align-items: center;
   @media (min-width: @tablet-width) {
-    margin-top: -93px;
+    margin-top: -196px;
   }
 }
 
@@ -34,5 +37,23 @@
 .video__panel {
   @media (min-width: @tablet-width) {
     margin-top: -93px;
+  }
+}
+
+.video__slogan {
+  margin: 0;
+  @media (min-width: @tablet-width) {
+    padding: 34px 0;
+  }
+}
+
+.video__intro {
+  margin: 0;
+  padding: 26px 23px 36px 23px;
+  @media (min-width: @tablet-width) {
+    padding: 0 164px 70px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 0 393px 70px;
   }
 }
