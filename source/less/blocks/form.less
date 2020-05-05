@@ -4,9 +4,9 @@
   color: black;
 
   margin: 0 auto;
-/*  width: 87.5%;
-  display: block;*/
-  padding: 17px 0;
+  /*  width: 87.5%;
+    display: block;*/
+  padding: 18px 0 14px 0;
   @media (min-width: @tablet-width) {
     font-size: 21px;
   }
@@ -24,17 +24,37 @@
 
 .form__wrapper {
   border-top: 1px #e5e5e5 solid;
+  padding-bottom: 21px;
   @media (min-width: @tablet-width) {
     border-top: none;
   }
 }
 
-.form__field {
+.form__name {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: center;
+  padding: 9px 0;
+}
+
+.form__contacts {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
 }
 
 .form__input {
   flex-grow: 1;
+  box-sizing: border-box;
+  min-height: 57px;
+}
+
+.form__span-name {
+  padding-right: 12px;
+}
+
+.form__span-contacts {
+  padding: 6px 0;
+  padding-left: 21px;
 }
