@@ -2,6 +2,14 @@
   .header-font;
   text-align: center;
   color: black;
+
+  margin: 0 auto;
+/*  width: 87.5%;
+  display: block;*/
+  padding: 17px 0;
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .form__comment {
@@ -9,9 +17,24 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-@media (max-width: 767px) {
-  display: none;
-}
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }
 
+.form__wrapper {
+  border-top: 1px #e5e5e5 solid;
+  @media (min-width: @tablet-width) {
+    border-top: none;
+  }
+}
 
+.form__field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.form__input {
+  flex-grow: 1;
+}
