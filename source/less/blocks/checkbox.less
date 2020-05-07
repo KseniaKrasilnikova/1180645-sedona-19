@@ -8,14 +8,71 @@
 .checkbox__header {
   margin: 0 auto;
 }
+
+.checkbox {
+  padding: 18px 0 3px 0;
+}
+
 /*
+custom checkbox
+*/
+/*этим скрыты авто-чекбоксы*/
+.checkbox__input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
 .checkbox__round {
   position: absolute;
-  margin-left: -2.9em;
-  width: 26px;
-  height: 23px;
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background: #f2f2f2;
+  margin-left: -5.5em;
 }
-*/
+
+.checkbox__tick {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  border-radius: 15%;
+  background: #f2f2f2;
+  margin-left: -5.5em;
+}
+
+.checkbox__label {
+  padding-left: 5.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox__item {
+  padding: 21px 0;
+  .checkbox__places & {
+    padding: 21px 0 33px 0;
+  }
+  .checkbox__places &:last-child {
+    padding: 21px 0 17px 0;
+  }
+}
+
+.checkbox__input:checked + .checkbox__round {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: #000000;
+  border: solid #f2f2f2 1.3em;
+}
+
+/* ------ */
+.checkbox__list {
+  list-style: none;
+  padding: 17px 0 0 0;
+  margin: 0 auto;
+  .checkbox__places & {
+    padding: 9px 0 0 0;
+  }
+}
