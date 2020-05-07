@@ -1,3 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__wrapper {
+  @media (min-width: @tablet-width) {
+    &:nth-child(1) {
+      order: 2;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 1;
+    }
+
+    &:nth-child(4) {
+      order: 4;
+    }
+
+    &:nth-child(5) {
+      order: 5;
+    }
+  }
+}
+
+
 .form__header {
   .header-font;
   text-align: center;
@@ -107,4 +137,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+      order: 6;
+  }
 }
