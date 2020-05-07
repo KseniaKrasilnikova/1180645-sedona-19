@@ -13,10 +13,7 @@
   padding: 18px 0 3px 0;
 }
 
-/*
-custom checkbox
-*/
-/*этим скрыты авто-чекбоксы*/
+/* custom checkbox */
 .checkbox__input {
   position: absolute;
   appearance: none;
@@ -51,9 +48,11 @@ custom checkbox
 
 .checkbox__item {
   padding: 21px 0;
+
   .checkbox__places & {
     padding: 21px 0 33px 0;
   }
+
   .checkbox__places &:last-child {
     padding: 21px 0 17px 0;
   }
@@ -67,11 +66,19 @@ custom checkbox
   border: solid #f2f2f2 1.3em;
 }
 
+.checkbox__input:checked + .checkbox__tick {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* ------ */
+
 .checkbox__list {
   list-style: none;
   padding: 17px 0 0 0;
   margin: 0 auto;
+
   .checkbox__places & {
     padding: 9px 0 0 0;
   }
