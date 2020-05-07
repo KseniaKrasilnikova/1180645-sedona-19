@@ -66,10 +66,10 @@
   flex-grow: 1;
   box-sizing: border-box;
   min-height: 57px;
-}
 
-.form__name .form__input {
-  width: 87.5%;
+  .form__name & {
+    width: 87.5%;
+  }
 }
 
 .form__span-name {
@@ -92,6 +92,19 @@
   border: 0;
 
   padding: 17px;
-  display: block;
-  width: inherit;
+  width: 100%;
+}
+
+.form__opinion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form__button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
