@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="shadow">
-  <header class="page-header container-desktop">
+  <header class="page-header page-header__container">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="main-nav__wrapper">
@@ -50,8 +50,10 @@
       </header>
       <div class="review__wrapper>">
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__tablet">
+
+
           <div class="form__wrapper">
-            <div class="container">
               <h3 class="form__header">Представьтесь:</h3>
               <label class="form__name form-text">
                 <span class="form__span-name">Имя*:</span>
@@ -66,9 +68,9 @@
                 <input class="form__input form-text__input" type="text" placeholder="Александрович">
               </label>
             </div>
-          </div>
+
           <div class="form__wrapper">
-            <div class="container">
+
               <h3 class="form__header">Контактная информация:</h3>
               <label class="form__contacts form-text">
                 <span class="form__span-contacts">Контактный телефон*:</span>
@@ -79,10 +81,10 @@
                 <input class="form__input form-text__input" type="text" placeholder="Введите e-mail">
               </label>
             </div>
-          </div>
+
 
           <div class="form__wrapper">
-            <div class="container">
+
               <div class="checkbox">
                 <h3 class="checkbox__header checkbox-header">Ваше общее впечатление:</h3>
                 <ul class="checkbox__list">
@@ -114,10 +116,11 @@
                 </ul>
               </div>
             </div>
+
           </div>
 
           <div class="form__wrapper">
-            <div class="container">
+
               <div class="checkbox checkbox__places">
                 <h3 class="checkbox__header checkbox-header">Посещенные достопримечательности:</h3>
                 <ul class="checkbox__list">
@@ -159,23 +162,20 @@
                 </ul>
               </div>
             </div>
-          </div>
+
           <div class="form__wrapper">
-            <div class="container">
+
               <div class="form__opinion">
                 <h3 class="form__header">Опишите свои эмоции:</h3>
                 <textarea class="form__area" name="comment"
                           rows="5">Опишите подробно все свои восторги</textarea>
               </div>
             </div>
-          </div>
 
-       <!--   <div class="container">-->
             <div class="form__button">
               <button class="review__button button" type="submit">Отправить отзыв</button>
               <span class="form__comment">* — обязательные поля</span>
             </div>
-    <!--      </div>-->
 
         </form>
       </div>
@@ -184,7 +184,7 @@
   </main>
 
 
-  <footer class="page-footer container">
+  <footer class="page-footer page-footer__container">
     <p class="page-footer__contacts">#VISITSEDONA</p>
     <div class="page-footer__social social"> <!-- позиционирование .page-footer__social , стили .social -->
       <ul class="page-footer__list social__list">
