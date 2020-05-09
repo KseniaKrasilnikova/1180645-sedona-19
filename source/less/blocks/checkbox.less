@@ -56,6 +56,10 @@
   .checkbox__places &:last-child {
     padding: 21px 0 17px 0;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 0;
+  }
 }
 
 .checkbox__input:checked + .checkbox__round {
@@ -81,5 +85,23 @@
 
   .checkbox__places & {
     padding: 9px 0 0 0;
+  }
+
+  .checkbox__impression & {
+    @media (min-width: @tablet-width) {
+      padding: 48px 0 0 0;
+    }
+  }
+}
+
+.checkbox__impression h3 {
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+}
+
+.checkbox__impression {
+  @media (min-width: @tablet-width) {
+    padding: 0;
   }
 }
