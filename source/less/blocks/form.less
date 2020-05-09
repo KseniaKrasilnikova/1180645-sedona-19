@@ -4,7 +4,6 @@
 }
 
 .form__wrapper {
-  width: 87.5%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -107,14 +106,19 @@
   border: 0;
 
   padding: 17px;
-  width: 100%;
+  width: 87.5%;
+  @media (min-width: @tablet-width) {
+    padding: 15px 0 0 20px;
+  }
 }
 
 .form__opinion {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  width: 87.5%;
 }
 
 .form__button {
@@ -169,5 +173,12 @@
 .form__information {
   @media (min-width: @tablet-width) {
     padding-top: 20px;
+  }
+}
+
+.form__textarea {
+  width: 100%;
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
   }
 }

@@ -16,6 +16,9 @@
 
 .checkbox {
   padding: 18px 0 3px 0;
+/*  @media (min-width: @tablet-width) {
+    padding: 18px 0 0 0;
+  }*/
 }
 
 /* custom checkbox */
@@ -97,22 +100,19 @@
 
   .checkbox__places & {
     padding: 9px 0 0 0;
-  }
-
-  .checkbox__impression & {
-    @media (min-width: @tablet-width) {
-      padding: 48px 0 0 0;
-    }
-  }
-
-  .checkbox__places & {
     @media (min-width: @tablet-width) {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      padding: 36px 97px;
+      padding: 36px 97px 0 97px;
+    }
+  }
+
+  .checkbox__impression & {
+    @media (min-width: @tablet-width) {
+      padding: 48px 0 0 0;
     }
   }
 }
