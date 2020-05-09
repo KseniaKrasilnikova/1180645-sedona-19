@@ -7,6 +7,11 @@
 
 .checkbox__header {
   margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    .checkbox__places & {
+      padding: 0 180px;
+    }
+  }
 }
 
 .checkbox {
@@ -51,10 +56,17 @@
 
   .checkbox__places & {
     padding: 21px 0 33px 0;
+    @media (min-width: @tablet-width) {
+      flex-basis: 199px;
+      padding: 21px 0 41px 0;
+    }
   }
 
   .checkbox__places &:last-child {
     padding: 21px 0 17px 0;
+    @media (min-width: @tablet-width) {
+       padding: 21px 0 41px 0;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -90,6 +102,17 @@
   .checkbox__impression & {
     @media (min-width: @tablet-width) {
       padding: 48px 0 0 0;
+    }
+  }
+
+  .checkbox__places & {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 36px 97px;
     }
   }
 }
