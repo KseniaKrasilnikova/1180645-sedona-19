@@ -53,7 +53,7 @@
           <div class="form__tablet">
 
 
-          <div class="form__wrapper form__introduce">
+            <div class="form__wrapper form__introduce">
               <h3 class="form__header">Представьтесь:</h3>
               <label class="form__name form-text">
                 <span class="form__span-name">Имя*:</span>
@@ -69,20 +69,31 @@
               </label>
             </div>
 
-          <div class="form__wrapper form__information">
-              <h3 class="form__header">Контактная информация:</h3>
-              <label class="form__contacts form-text">
-                <span class="form__span-contacts">Контактный телефон*:</span>
-                <input class="form__input form-text__input" type="text" placeholder="Введите телефон">
-              </label>
-              <label class="form__contacts form__contacts--mail form-text">
-                <span class="form__span-contacts">Электронная почта*:</span>
-                <input class="form__input form-text__input" type="text" placeholder="Введите e-mail">
-              </label>
+            <div class="form__wrapper form__information">
+              <h3 class="form__header form__header-decorated">Контактная информация:</h3>
+              <div class="form__container">
+
+
+                <label class="form__contacts form-text">
+                  <div class="form__label">
+                    <span class="form__span-contacts">Телефон*:</span>
+                    <input class="form__input form-text__input" type="text" placeholder="Введите телефон">
+                  </div>
+                </label>
+
+
+                <label class="form__contacts form-text">
+                  <div class="form__label form__label--mail">
+                    <span class="form__span-contacts">Электронная почта*:</span>
+                    <input class="form__input form-text__input" type="text" placeholder="Введите e-mail">
+                  </div>
+                </label>
+
+              </div>
             </div>
 
 
-          <div class="form__wrapper">
+            <div class="form__wrapper">
               <div class="checkbox checkbox__impression">
                 <h3 class="checkbox__header checkbox-header">Ваше общее впечатление:</h3>
                 <ul class="checkbox__list">
@@ -118,56 +129,56 @@
           </div>
 
           <div class="form__wrapper">
-              <div class="checkbox checkbox__places">
-                <h3 class="checkbox__header checkbox-header">Посещенные<br>достопримечательности:</h3>
-                <ul class="checkbox__list">
-                  <li class="checkbox__item">
-                    <label class="checkbox__label" for="bridge">
-                      <input class="checkbox__input"
-                             id="bridge" type="checkbox" name="bridge"
-                             checked>
-                      <span class="checkbox__tick"></span>
-                      <span class="checkbox__text">Мост Дьявола</span>
-                    </label>
-                  </li>
-                  <li class="checkbox__item">
-                    <label class="checkbox__label" for="bell">
-                      <input class="checkbox__input"
-                             id="bell" type="checkbox" name="bell"
-                             checked>
-                      <span class="checkbox__tick"></span>
-                      <span class="checkbox__text">Гора-Колокол</span>
-                    </label>
-                  </li>
-                  <li class="checkbox__item">
-                    <label class="checkbox__label" for="park">
-                      <input class="checkbox__input"
-                             id="park" type="checkbox" name="park"
-                             checked>
-                      <span class="checkbox__tick"></span>
-                      <span class="checkbox__text">Слайд-парк</span>
-                    </label>
-                  </li>
-                  <li class="checkbox__item">
-                    <label class="checkbox__label" for="rocks">
-                      <input class="checkbox__input"
-                             id="rocks" type="checkbox" name="rocks">
-                      <span class="checkbox__tick"></span>
-                      <span class="checkbox__text">Красные скалы</span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
+            <div class="checkbox checkbox__places">
+              <h3 class="checkbox__header checkbox-header form__header-decorated">Посещенные<br>достопримечательности:</h3>
+              <ul class="checkbox__list">
+                <li class="checkbox__item">
+                  <label class="checkbox__label" for="bridge">
+                    <input class="checkbox__input"
+                           id="bridge" type="checkbox" name="bridge"
+                           checked>
+                    <span class="checkbox__tick"></span>
+                    <span class="checkbox__text">Мост Дьявола</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label" for="bell">
+                    <input class="checkbox__input"
+                           id="bell" type="checkbox" name="bell"
+                           checked>
+                    <span class="checkbox__tick"></span>
+                    <span class="checkbox__text">Гора-Колокол</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label" for="park">
+                    <input class="checkbox__input"
+                           id="park" type="checkbox" name="park"
+                           checked>
+                    <span class="checkbox__tick"></span>
+                    <span class="checkbox__text">Слайд-парк</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__label" for="rocks">
+                    <input class="checkbox__input"
+                           id="rocks" type="checkbox" name="rocks">
+                    <span class="checkbox__tick"></span>
+                    <span class="checkbox__text">Красные скалы</span>
+                  </label>
+                </li>
+              </ul>
             </div>
+          </div>
 
           <div class="form__wrapper">
-              <div class="form__opinion">
-                <h3 class="form__header">Опишите свои эмоции:</h3>
-                <div class="form__textarea">
+            <div class="form__opinion">
+              <h3 class="form__header form__header-decorated">Опишите свои эмоции:</h3>
+              <div class="form__textarea">
                 <textarea class="form__area" name="comment" rows="5">Опишите подробно все свои восторги</textarea>
-                </div>
               </div>
             </div>
+          </div>
 
           <div class="form__wrapper">
             <div class="form__button">
