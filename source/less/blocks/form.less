@@ -180,6 +180,25 @@
 .form__information {
   @media (min-width: @tablet-width) {
     padding-top: 20px;
+    & h3::before {
+      content: "";
+      width: 19.26%;;
+      height: 1px;
+      background-color: #dbdbdb;
+      position: relative;
+      display: block;
+      top: 12px;
+    }
+    & h3::after {
+      content: "";
+      width: 19.26%;
+      height: 1px;
+      background-color: #dbdbdb;
+      position: relative;
+      display: block;
+      top: -15px;
+      left: 81%;
+    }
   }
 }
 

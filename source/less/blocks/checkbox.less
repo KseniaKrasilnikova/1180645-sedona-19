@@ -8,8 +8,24 @@
 .checkbox__header {
   margin: 0 auto;
   @media (min-width: @tablet-width) {
-    .checkbox__places & {
-      padding: 0 180px;
+    .checkbox__places &::before {
+      content: "";
+      width: 19.26%;;
+      height: 1px;
+      background-color: #dbdbdb;
+      position: relative;
+      display: block;
+      top: 23px;
+    }
+    .checkbox__places &::after {
+      content: "";
+      width: 19.26%;
+      height: 1px;
+      background-color: #dbdbdb;
+      position: relative;
+      display: block;
+      top: -29px;
+      left: 81%;
     }
   }
 }
