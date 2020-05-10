@@ -10,13 +10,14 @@
   @media (min-width: @tablet-width) {
     .checkbox__places &::before {
       content: "";
-      width: 19.26%;;
+      width: 19.26%;
       height: 1px;
       background-color: #dbdbdb;
       position: relative;
       display: block;
       top: 23px;
     }
+
     .checkbox__places &::after {
       content: "";
       width: 19.26%;
@@ -32,9 +33,9 @@
 
 .checkbox {
   padding: 18px 0 3px 0;
-/*  @media (min-width: @tablet-width) {
-    padding: 18px 0 0 0;
-  }*/
+  /*  @media (min-width: @tablet-width) {
+      padding: 18px 0 0 0;
+    }*/
 }
 
 /* custom checkbox */
@@ -84,7 +85,7 @@
   .checkbox__places &:last-child {
     padding: 21px 0 17px 0;
     @media (min-width: @tablet-width) {
-       padding: 21px 0 41px 0;
+      padding: 21px 0 41px 0;
     }
   }
 
@@ -133,14 +134,38 @@
   }
 }
 
-.checkbox__impression h3 {
+/*.checkbox__impression h3 {
   @media (min-width: @tablet-width) {
     text-align: left;
   }
-}
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
+  }
+}*/
 
 .checkbox__impression {
   @media (min-width: @tablet-width) {
     padding: 0;
+    & h3 {
+      text-align: left;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    & h3 {
+      padding-left: 80px;
+    }
+  }
+}
+
+.form__introduce::before {
+  @media (min-width: @tablet-width) {
+    background-color: #dbdbdb;
+    left: 50%;
+    content: '';
+    display: block;
+    height: 33%;
+    width: 1px;
+    position: absolute;
+    transform: translate(-50%, 0);
   }
 }
