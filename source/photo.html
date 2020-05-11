@@ -29,7 +29,11 @@
       </div>
     </nav>
     <a href="index.html">
-      <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Переход на главную страницу" width="102px" height="83px">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Переход на главную страницу" width="102px" height="83px">
+      </picture>
     </a>
   </header>
   <main class="page-main">
@@ -48,9 +52,13 @@
         </header>
         <div class="photo__wrapper">
           <ul class="photo__list">
-            <li class="photo__item preview"> <!-- .photo__item управляет шириной, .preview для начинки-->
-              <img class="photo__bg-big" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
-                   alt="Фото просторов Седоны">
+            <li class="photo__item preview">
+              <picture class="photo__container">
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="photo__bg-big" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg" width="280" height="280"
+                     alt="Фото просторов Седоны">
+              </picture>
               <div class="photo__info">
                 <div class="photo__description">
                   <p class="photo__title preview__title">Неродные просторы</p>
@@ -73,8 +81,12 @@
               </div>
             </li>
             <li class="photo__item preview">
-              <img class="photo__bg" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280"
-                   alt="Фото растительности Седоны">
+              <picture class="photo__container">
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="photo__bg" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg" width="280" height="280"
+                     alt="Фото растительности Седоны">
+              </picture>
               <div class="photo__info">
                 <div class="photo__description">
                   <p class="photo__title preview__title">Местная растительность</p>
@@ -97,8 +109,12 @@
               </div>
             </li>
             <li class="photo__item preview">
-              <img class="photo__bg" src="img/photo-roads-mobile@1x.jpg" width="280" height="280"
-                   alt="Фото дороги на север от Седоны">
+              <picture class="photo__container">
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="photo__bg" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg" width="280" height="280"
+                     alt="Фото дороги на север от Седоны">
+              </picture>
               <div class="photo__info">
                 <div class="photo__description">
                   <p class="photo__title preview__title">Дорога на север</p>
@@ -121,8 +137,12 @@
               </div>
             </li>
             <li class="photo__item preview">
-              <img class="photo__bg" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280"
-                   alt="Фото Моста дьявола">
+              <picture class="photo__container">
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="photo__bg" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" width="280" height="280"
+                     alt="Фото Моста дьявола">
+              </picture>
               <div class="photo__info">
                 <div class="photo__description">
                   <p class="photo__title preview__title">Мост дьявола</p>
@@ -156,8 +176,11 @@
             подорожали в очередной раз!</p>
         </header>
         <div class="video__screen">
-          <img class="video__screen-preview" src="img/video-mobile@1x.jpg" alt="Путешествие в Седону" width="321"
-               height="201">
+          <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video__screen-preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Путешествие в Седону" width="321" height="201">
+          </picture>
         </div>
       </div>
       <div class="video-control">
