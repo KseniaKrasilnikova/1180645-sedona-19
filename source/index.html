@@ -40,7 +40,7 @@
     <h1 class="visually-hidden">Седона - отличное место для отдыха</h1>
     <section class="welcome welcome--main-bg">
       <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img class="welcome__welcome-index" src="img/text-sedona-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+      <img class="welcome__welcome-index" src="img/text-sedona-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
     </section>
     <section class="advantages">
       <header class="advantages__header">
@@ -54,7 +54,11 @@
           <p class="advantages__number advantages-text__white-normal">&ndash; №1 &ndash;</p>
           <p class="advantages__description advantages-text__white-normal">Седона не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <img class="advantages__photo" src="img/main-city-mobile@1x.jpg" width="520" height="260" alt="Улицы Седоны">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+          <img class="advantages__photo" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="520" height="260" alt="Улицы Седоны">
+        </picture>
       </div>
       <section class="features">
         <div class="features__wrapper">
@@ -126,7 +130,11 @@
           <p class="advantages__number advantages-text__white-normal">&ndash; №2 &ndash;</p>
           <p class="advantages__description advantages-text__white-normal">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="advantages__photo" src="img/main-bridge-mobile@1x.jpg" width="520" height="260" alt="Мост Дьявола">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+          <img class="advantages__photo" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="520" height="260" alt="Мост Дьявола">
+        </picture>
       </div>
       <div class="advantages__wrapper">
         <div class="advantages__item advantages__item--on-grey advantages-text">
@@ -157,7 +165,11 @@
     </section>
     <section class="map">
       <div class="map__wrapper">
-        <img class="map__picture map-pic-hidden" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Седона на карте">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__picture map-pic-hidden" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg" width="320" height="350" alt="Седона на карте">
+        </picture>
         <iframe class="map__field"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d44047.38962387951!2d-111.81077328792595!3d34.86020167213232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1584270979628!5m2!1sru!2sru"
                 height="350" style="border:0;" allowfullscreen=""></iframe>
