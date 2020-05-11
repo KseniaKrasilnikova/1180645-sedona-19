@@ -29,14 +29,18 @@
       </div>
     </nav>
     <div>
-      <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Переход на главную страницу" width="102px" height="83px">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Переход на главную страницу" width="102px" height="83px">
+      </picture>
     </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Седона - отличное место для отдыха</h1>
     <section class="welcome welcome--main-bg">
       <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-      <img class="welcome__welcome-index" src="img/text-sedona-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+        <img class="welcome__welcome-index" src="img/text-sedona-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
     </section>
     <section class="advantages">
       <header class="advantages__header">

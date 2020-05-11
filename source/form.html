@@ -29,7 +29,12 @@
       </div>
     </nav>
     <a href="index.html">
-      <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Переход на главную страницу" width="102px" height="83px">
+      <picture>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Переход на главную страницу" width="102px" height="83px">
+        </picture>
     </a>
   </header>
   <main class="page-main">
