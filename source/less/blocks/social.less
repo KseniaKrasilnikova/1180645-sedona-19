@@ -7,4 +7,21 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  svg {
+    fill: #ffffff;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
