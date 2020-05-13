@@ -26,17 +26,22 @@
   box-shadow: 1px 4px 7px -6px #000000;
   @media (min-width: @tablet-width) {
     box-shadow: none;
-    width: 25%;
+    &:nth-child(4n-3), &:nth-child(4n-4) {
+      min-width: 132px;
+    }
+
+    &:nth-child(4n-2), &:nth-child(4n-1) {
+      min-width: 202px;
+    }
   }
   @media (min-width: @desktop-width) {
-    width: 25%;
-    //&:nth-child(4n-3), &:nth-child(4n-4) {
-    //  min-width: 221px;
-    //}
-    //
-    //&:nth-child(4n-2), &:nth-child(4n-1) {
-    //  min-width: 291px;
-    //}
+    &:nth-child(4n-3), &:nth-child(4n-4) {
+      min-width: 217px;
+    }
+
+    &:nth-child(4n-2), &:nth-child(4n-1) {
+      min-width: 291px;
+    }
   }
 }
 
