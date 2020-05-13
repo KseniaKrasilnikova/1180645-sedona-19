@@ -70,15 +70,18 @@
     fill-opacity: 0.3;
   }
 }
-/*.main-nav--closed .main-nav__toggle {
-  background: transparent url("../img/icon-menu.svg") no-repeat 0 0;
-}*/
+.main-nav--closed .main-nav__toggle {
+  /*background: transparent url("../img/icon-menu.svg") no-repeat 0 0;*/
+}
 
 /*
 no-JS
 */
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed .main-nav__list {
+  .main-nav--closed .main-nav__toggle-cross {
+    display: none;
+  }
+  .main-nav--opened .main-nav__toggle-menu {
     display: none;
   }
 
