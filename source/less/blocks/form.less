@@ -101,8 +101,14 @@
 
   padding-left: 21px;
   border: 0;
-  /*  background-color: #f2f2f2;*/
-  background-color: #f25e7b;
+  background-color: #f2f2f2;
+  &:hover, &:focus {
+    background-color: #e5e5e5;
+  }
+  &:active {
+    background-color: #ffffff;
+    border: solid 4px #e5e5e5;
+  }
 
   &,
   &::placeholder {
@@ -121,7 +127,6 @@
     width: 87.5%;
   }
 }
-
 
 .form__span-name {
   padding-right: 12px;
