@@ -92,14 +92,16 @@
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 /* ------ */
 /* custom checkbox style */
 .checkbox__round,
 .checkbox__tick {
-  &:hover,
-  &:focus {
+  &:hover {
     background: #e5e5e5;
   }
 
