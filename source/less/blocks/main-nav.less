@@ -1,15 +1,5 @@
 .main-nav {
   position: relative;
-/*  @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    width: 100%;
-  }*/
-}
-
-.main-nav__wrapper {
-  @media (min-width: @tablet-width) {
-/*    width: 100%;*/
-  }
 }
 
 .main-nav__list {
@@ -24,9 +14,9 @@
 
     background-color: #ffffff;
   }
-    @media (min-width: @desktop-width) {
-      padding: 0;
-    }
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 /*
@@ -65,16 +55,20 @@
 .main-nav__toggle-cross,
 .main-nav__toggle-menu {
   fill: white;
+
   &:hover {
     fill-opacity: 0.6;
   }
+
   &:active {
     fill-opacity: 0.3;
   }
 }
+
 .main-nav--closed .main-nav__toggle-cross {
   display: none;
 }
+
 .main-nav--opened .main-nav__toggle-menu {
   display: none;
 }
