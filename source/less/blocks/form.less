@@ -12,9 +12,9 @@
   padding-bottom: 21px;
   border-top: 1px #e5e5e5 solid;
 
-  &:last-child {
+/*  &:last-child {
     border-top: none;
-  }
+  }*/
 
   @media (min-width: @tablet-width) {
     border-top: none;
@@ -42,7 +42,6 @@
 }
 
 .form__header-decorated {
-
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -55,6 +54,9 @@
       background-color: #dbdbdb;
       position: relative;
       display: block;
+      @media (min-width: @desktop-width) {
+        width: 281px;
+      }
     }
   }
 }
@@ -179,7 +181,11 @@
   @media (min-width: @tablet-width) {
     justify-content: space-between;
     align-items: center;
-    padding: 23px 0;
+    padding: 23px 60px 44px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
