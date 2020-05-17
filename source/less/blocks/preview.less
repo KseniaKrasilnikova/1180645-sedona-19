@@ -13,6 +13,8 @@
   font-weight: bold;
   color: black;
   text-align: left;
+
+  margin: 0;
   @media (min-width: @desktop-width) {
     color: #ffffff;
   }
@@ -24,7 +26,67 @@
   font-weight: normal;
   text-align: left;
   text-transform: none;
+
+  margin: 0;
   @media (min-width: @desktop-width) {
     color: #ffffff;
+  }
+}
+
+.preview__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.preview__bg-big {
+  display: block;
+  width: 87.5%;
+  align-self: center;
+  background-color: #dec9bf;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.preview__bg {
+  background-color: #dec9bf;
+  display: block;
+  width: 87.5%;
+  align-self: center;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.preview__info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 6.25%;
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 21px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: -79px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.preview__description {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 15px;
+  }
+}
+
+.preview__like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media (max-width: @mobile-width-only) {
+    padding-top: 9px;
   }
 }
