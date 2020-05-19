@@ -3,17 +3,21 @@
   text-align: left;
   color: black;
   text-transform: none;
-
-
   padding-top: 14px;
 }
 
 .checkbox__header {
   margin: 0;
+  .header-font;
+  text-align: center;
+  color: black;
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .checkbox {
-  padding-top: 18px;
+  padding-top: 19px;
   @media (min-width: @tablet-width) {
     padding-bottom: 20px;
   }
@@ -35,15 +39,6 @@
   margin: -1px;
 }
 
-.checkbox__round {
-  position: absolute;
-  width: 4em;
-  height: 4em;
-  border-radius: 50%;
-  background: #f2f2f2;
-  margin-left: -5.5em;
-}
-
 .checkbox__tick {
   position: absolute;
   width: 4em;
@@ -62,7 +57,7 @@
 }
 
 .checkbox__item {
-  padding: 7px 0 22px;
+  padding: 20px 0;
 
   .checkbox__places & {
     padding: 15px 0 25px;
@@ -132,7 +127,7 @@
 
 .checkbox__list {
   list-style: none;
-  padding: 17px 0 0 0;
+  padding: 0;
   margin: 0 auto;
 
   .checkbox__places & {
@@ -160,6 +155,7 @@
 }
 
 .checkbox__impression {
+  padding-top: 18px;
   @media (min-width: @tablet-width) {
     padding: 0;
     & h3 {
@@ -171,4 +167,38 @@
       padding-left: 80px;
     }
   }
+}
+.radio {
+  padding-top: 18px;
+}
+.radio__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+}
+.radio__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 7px 0;
+}
+.radio__round {
+  width: 4em;
+  height: 4em;
+  margin-right: 20px;
+}
+.radio__header {
+  .header-font;
+  text-align: center;
+  color: black;
+  margin: 0;
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+.radio__text {
+  .header-font;
+  text-align: left;
+  color: black;
+  text-transform: none;
 }

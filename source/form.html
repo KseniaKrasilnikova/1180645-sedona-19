@@ -97,16 +97,31 @@
               </div>
             </div>
             <div class="form__wrapper">
-              <div class="checkbox checkbox__impression">
-                <h3 class="checkbox__header checkbox-header">Ваше общее впечатление:</h3>
-                <ul class="checkbox__list">
+              <div class="radio <!--checkbox__impression-->">
+                <h3 class="radio__header">Ваше общее впечатление:</h3>
+                <div class="radio__wrapper">
+                <label class="radio__item">
+                  <input class="radio__round" type="radio" value="good" name="impression" checked>
+                  <span class="radio__text">Скорее положительное</span>
+                </label>
+                <label class="radio__item">
+                  <input class="radio__round" type="radio" value="bad" name="impression">
+                  <span class="radio__text">Скорее отрицательное</span>
+                </label>
+                <label class="radio__item">
+                  <input class="radio__round" type="radio" value="dont-know" name="impression">
+                  <span class="radio__text">Затрудняюсь ответить</span>
+
+                </label>
+                </div>
+                <!--<ul class="checkbox__list">
                   <li class="checkbox__item">
-                    <label class="checkbox__label" for="good">
+                    &lt;!&ndash;<label class="checkbox__label" for="good">
                       <input class="checkbox__input" id="good" type="checkbox" name="good" checked="">
                       <span class="checkbox__round"></span>
                       <span class="checkbox__text">Скорее положительное</span>
-                    </label>
-                  </li>
+                    </label>&ndash;&gt;
+                    </li>
                   <li class="checkbox__item">
                     <label class="checkbox__label" for="bad">
                       <input class="checkbox__input" id="bad" type="checkbox" name="bad">
@@ -121,13 +136,13 @@
                       <span class="checkbox__text">Затрудняюсь ответить</span>
                     </label>
                   </li>
-                </ul>
+                </ul>-->
               </div>
             </div>
           </div>
           <div class="form__wrapper">
-            <div class="checkbox checkbox__places">
-              <h3 class="checkbox__header checkbox-header form__header-decorated">Посещенные<br>достопримечательности:
+            <div class="checkbox <!--checkbox__places-->">
+              <h3 class="checkbox__header form__header-decorated">Посещенные<br>достопримечательности:
               </h3>
               <ul class="checkbox__list">
                 <li class="checkbox__item">
@@ -181,7 +196,7 @@
   </main>
   <footer class="page-footer page-footer__container">
     <p class="page-footer__contacts">#VISITSEDONA</p>
-    <div class="page-footer__social social"> <!-- позиционирование .page-footer__social , стили .social -->
+    <div class="page-footer__social social">
       <ul class="page-footer__list social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">
