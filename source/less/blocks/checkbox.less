@@ -51,53 +51,20 @@
 .checkbox__label {
   padding-left: 5.5em;
   display: flex;
- /* align-items: center;*/
-
-
 }
 
 .checkbox__item {
-  padding: 20px 0;
-
-  .checkbox__places & {
     padding: 15px 0 25px;
     @media (min-width: @tablet-width) {
       flex-basis: 199px;
-     /* padding: 21px 0 41px 0;*/
-
       padding: 21px 0 13px 0;
     }
-  }
 
-  .checkbox__places &:last-child {
+  &:last-child {
     padding: 21px 0 17px 0;
     @media (min-width: @tablet-width) {
-     /* padding: 21px 0 41px 0;*/
-
       padding: 34px 0 25px;
     }
-  }
-
-  @media (min-width: @tablet-width) {
-   /* padding: 26px 0;*/
-
-    padding: 12px 0 26px;
-  }
-}
-
-.checkbox__input:checked + .checkbox__round {
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
-  background: #000000;
-  border: solid #f2f2f2 1.3em;
-  &:hover,
-  &:focus {
-    border: solid #e5e5e5 1.3em;
-  }
-  &:active {
-    background: rgba(0,0,0,0.3);
-    border: solid #d5d5d5 1.3em;
   }
 }
 
@@ -105,6 +72,7 @@
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+
   &:active {
     opacity: 0.3;
   }
@@ -112,7 +80,6 @@
 
 /* ------ */
 /* custom checkbox style */
-.checkbox__round,
 .checkbox__tick {
   &:hover {
     background: #e5e5e5;
@@ -129,76 +96,15 @@
   list-style: none;
   padding: 0;
   margin: 0 auto;
-
-  .checkbox__places & {
-    padding: 0;
-    @media (min-width: @tablet-width) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      /*padding: 36px 97px 0 97px;*/
-
-      padding: 23px 97px 0;
-    }
-    @media (min-width: @desktop-width) {
-      padding: 10px 0 17px;
-    }
-  }
-
-  .checkbox__impression & {
-    @media (min-width: @tablet-width) {
-      padding: 48px 0 0 0;
-    }
-  }
-}
-
-.checkbox__impression {
-  padding-top: 18px;
   @media (min-width: @tablet-width) {
-    padding: 0;
-    & h3 {
-      text-align: left;
-    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 97px 0;
   }
   @media (min-width: @desktop-width) {
-    & h3 {
-      padding-left: 80px;
-    }
+    padding: 10px 0 17px;
   }
-}
-.radio {
-  padding-top: 18px;
-}
-.radio__wrapper {
-  display: flex;
-  flex-direction: column;
-  padding-top: 12px;
-}
-.radio__item {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 7px 0;
-}
-.radio__round {
-  width: 4em;
-  height: 4em;
-  margin-right: 20px;
-}
-.radio__header {
-  .header-font;
-  text-align: center;
-  color: black;
-  margin: 0;
-  @media (min-width: @tablet-width) {
-    font-size: 21px;
-  }
-}
-.radio__text {
-  .header-font;
-  text-align: left;
-  color: black;
-  text-transform: none;
 }
