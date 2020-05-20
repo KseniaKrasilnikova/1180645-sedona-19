@@ -1,3 +1,13 @@
+.checkbox {
+  padding-top: 19px;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 17px 0 0 0;
+  }
+}
+
 .checkbox__text {
   .header-font;
   text-align: left;
@@ -13,16 +23,6 @@
   color: black;
   @media (min-width: @tablet-width) {
     font-size: 21px;
-  }
-}
-
-.checkbox {
-  padding-top: 19px;
-  @media (min-width: @tablet-width) {
-    padding-bottom: 20px;
-  }
-  @media (min-width: @desktop-width) {
-    padding: 17px 0 0 0;
   }
 }
 
@@ -54,11 +54,11 @@
 }
 
 .checkbox__item {
-    padding: 15px 0 25px;
-    @media (min-width: @tablet-width) {
-      flex-basis: 199px;
-      padding: 21px 0 13px 0;
-    }
+  padding: 15px 0 25px;
+  @media (min-width: @tablet-width) {
+    flex-basis: 199px;
+    padding: 21px 0 13px 0;
+  }
 
   &:last-child {
     padding: 21px 0 17px 0;
