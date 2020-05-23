@@ -3,7 +3,7 @@
   height: 280px;
   top: 300px;
   @media (min-width: @tablet-width) {
-    width: 640px;
+    width: 400px;
     height: 347px;
   }
 }
@@ -21,6 +21,12 @@
   padding: 16px 77px;
   margin: 0;
 
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding: 16px 121px;
+    margin: 14px 0;
+  }
+
   &:hover,
   &:focus {
     background-color: #669ec0;
@@ -36,6 +42,9 @@
 
 .failure__header {
   padding: 40px 62px 25px;
+  @media (min-width: @tablet-width) {
+    padding: 54px 78px 20px;
+  }
 }
 
 .failure__description {
