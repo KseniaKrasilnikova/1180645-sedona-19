@@ -1,10 +1,12 @@
 .checkbox {
   padding-bottom: 13px;
   padding-top: 18px;
+
   @media (min-width: @tablet-width) {
     padding-bottom: 16px;
     padding-top: 0;
   }
+
   @media (min-width: @desktop-width) {
     padding: 14px 0 0 0;
   }
@@ -22,7 +24,8 @@
   margin: 0;
   .header-font;
   text-align: center;
-  color: black;
+  color: #000000;
+
   @media (min-width: @tablet-width) {
     font-size: 21px;
   }
@@ -32,8 +35,6 @@
 .checkbox__input {
   position: absolute;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 
   clip: rect(0 0 0 0);
   width: 1px;
@@ -48,6 +49,14 @@
   border-radius: 15%;
   background: #f2f2f2;
   margin-left: -5.5em;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #d5d5d5;
+  }
 }
 
 .checkbox__label {
@@ -56,16 +65,17 @@
 }
 
 .checkbox__item {
-  padding: 15px 0 25px;
+  padding: 15px 0 25px 0;
+  flex-basis: 100%;
+
   @media (min-width: @tablet-width) {
-    padding: 21px 0 13px 0;
+    padding: 21px 0 25px 30px;
+    flex-basis: 35%;
   }
 
-  &:last-child {
-    padding: 15px 0 20px 0;
-    @media (min-width: @tablet-width) {
-      padding: 34px 0 25px;
-    }
+  @media (min-width: @desktop-width) {
+    padding: 21px 0 13px;
+    flex-basis: auto;
   }
 }
 
@@ -80,35 +90,27 @@
 }
 
 /* ------ */
-/* custom checkbox style */
-.checkbox__tick {
-  &:hover {
-    background: #e5e5e5;
-  }
-
-  &:active {
-    background: #d5d5d5;
-  }
-}
 
 .checkbox__input:focus + .checkbox__tick {
   outline: 2px solid orange;
 }
-/* ------ */
 
 .checkbox__list {
   list-style: none;
   padding: 0;
   margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 23px 97px 0;
+    padding: 23px 0 0;
   }
+
   @media (min-width: @desktop-width) {
-    padding: 9px 0 14px;
+    justify-content: space-between;
+    padding: 23px 0 26px;
   }
 }
