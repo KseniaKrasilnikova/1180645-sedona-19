@@ -1,5 +1,16 @@
 .video {
-  position: relative;
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 83px;
+  }
 }
 
 .video__wrapper {
@@ -36,17 +47,16 @@
 }
 
 .video-control {
+  margin-top: -52px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-bottom: -59px;
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: -57px;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -31px;
   }
 }
 
@@ -64,7 +74,7 @@
 
 .video__intro {
   margin: 0;
-  padding: 27px 23px 36px 23px;
+  padding: 26px 23px 36px 23px;
 
   @media (min-width: @tablet-width) {
     padding: 0 164px 72px;
